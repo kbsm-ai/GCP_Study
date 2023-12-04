@@ -1,1 +1,25 @@
-GCP_Study
+Pub/Sub implementation using maven project
+------------------------------------------------
+- Create Maven project in eclipse with group and artifact ids
+- Add dependencies in pom.xml [com.google.cloud, google-cloud-pubsub, 1.125.13]
+- Develop Publisher module
+
+- In Google Cloud CLI, 
+  > run "gcloud init" 
+  > approve login with the obtained URL 
+  > select the project using "gcloud config set project PROJECT_ID"
+
+- In GCP, 
+  > create Topic, subcriptions, 
+  > create service account, set roles, set JSON access key (get it downloaded as we test it from local dev env and rename it)
+
+- In command prompt,
+  > set GOOGLE_APPLICATION_CREDENTIALS="D:\key.json"
+
+- In eclipse, 
+  > right click maven project > Maven > Update project > give goal as "clean install"
+  > right click maven project > Run as > Maven build
+  > Open main class file (publisher) and run the application
+
+- In GCP, pull and check the message
+
