@@ -26,3 +26,7 @@ Pub/Sub implementation using maven project
 Links referred :
 > Set up Application Default Credentials : https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to
 > https://cloud.google.com/pubsub/docs/publish-receive-messages-client-library#java
+
+Command to run : 
+----------------
+java -cp target\mvtest-0.0.1-SNAPSHOT.jar SubscriberAsyncApp
